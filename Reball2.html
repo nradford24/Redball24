@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type='text/javascript'>
+	function sayhelloworld(){ alert ('Nikki is working');
+            }
+       </script>
+	
+
+
+<script>
+	function moveup()
+	{
+	redball.top=redball.top -30;
+            }
+    </script>
+	<script>
+	function moveleft()
+	{
+	redball.left=redball.left-30;
+	}
+	</script>
+<script>
+function moveright() 
+{
+redball.left=redball.left +30;
+}
+</script>
+<script>
+function movedown()
+{ 
+redball.top=redball.top + 30;
+}
+</script>
+<script>
+function moveupright()
+{
+moveright();
+moveup(); }
+</script>
+<script>
+function moveupleft()
+{
+moveleft();
+moveup();
+}
+</script>
+<script>
+function movedownright()
+{
+movedown();
+moveright();
+}
+</script>
+<script>
+function movedownleft()
+{
+movedown();
+moveleft();
+}
+</script>
+<script>
+function movetriangle()
+{
+moveupright();
+movedownleft();
+moveleft();
+}
+
+</script>
+<script>
+function moveoctagon()
+{
+moveupright();
+moveright();
+movedownleft();
+movedownright();
+moveleft();
+moveupleft();
+}
+</script>
+<script>
+function movesquare()
+{
+moveup();
+moveright();
+movedown();
+moveleft();
+moveup();
+}
+</script>
+</head>
+<body>
+
+
+<img id='redball' src='http://media3.giphy.com/media/22YXh1AveKJtS/giphy.gif'/>
+<button onclick="sayhelloworld();">Get IT Gurl</button>
+<button onclick="moveup()")> Move Up</button>
+<button onclick="moveleft()")> Move Left</button>
+<button onclick="moveright()")>Move Right</button>
+<button onclick="movedown()")>Move Down</button>
+<button onclick="moveupright()")> Move Up Right</button>
+<button onclick="moveupleft()")> Move Up Left</button>
+<button onclick="movedownright()")>Move  Down Right</button>
+<button onclick="movedownleft()")>Move Down Left</button>
+<button onclick="movetriangle()")>Move Triangle</button>
+<button onclick="moveoctagon()")>Move Octagon</button>
+<button onclick="movesquare()")>Move Square</button>
+
+
+</body>
+</html>
+
+					 

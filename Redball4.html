@@ -1,0 +1,129 @@
+<html>
+
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type='text/javascript'>
+	function sayhelloworld(){ alert ('Nikki is working');
+            }
+       </script>
+	
+
+
+<script>
+	function moveup()
+	{
+	redball.top=redball.top -30;
+            }
+    </script>
+	<script>
+	function moveleft()
+	{
+	redball.left=redball.left-30;
+	}
+	</script>
+<script>
+function moveright() 
+{
+redball.left=redball.left +30;
+}
+</script>
+<script>
+function movedown()
+{ 
+redball.top=redball.top + 30;
+}
+</script>
+<script>
+function moveupright()
+{
+moveright();
+moveup(); }
+</script>
+<script>
+function moveupleft()
+{
+moveleft();
+moveup();
+}
+</script>
+<script>
+function movedownright()
+{
+movedown();
+moveright();
+}
+</script>
+<script>
+function movedownleft()
+{
+movedown();
+moveleft();
+}
+</script>
+<script>
+function movetriangle()
+{
+moveupright();
+movedownleft();
+moveleft();
+}
+
+</script>
+<script>
+function moveoctagon()
+{
+moveupright();
+moveright();
+movedownleft();
+movedownright();
+moveleft();
+moveupleft();
+}
+</script>
+<script>
+function movesquare()
+{
+moveup();
+moveright();
+movedown();
+moveleft();
+moveup();
+}
+</script>
+</head>
+<body>
+
+
+<img id='redball' src='http://media3.giphy.com/media/22YXh1AveKJtS/giphy.gif'/>
+<div style="height 150px; width: 150px; background-color: blue; border-color: green; position: absolute; left: 30%; top: 30m; margin:2px;">
+<button onclick="moveup()")>Move Up</button>
+<button onclick="movedown()")>Move Down</button>
+<button onclick="moveleft()")>Move Left</button>
+<button onclick="moveright()">Move Right</button> 
+</div>
+
+
+<div style="height 150px; width: 150px; background-color: red; border-color: green; position: absolute; left: 60%; top: 40m; margin:2px">
+<button onclick="moveupleft()">Move Up Left </button>
+<button onclick="moveupright()">Move Up Right</button> 
+<button onclick="movedownleft()">Move Down Left</button>
+<button onclick="movedownright()">Move Down Right</button>
+<button onclick="makeasquare()">Make A Square</button>
+</div>
+
+
+<div style="height 150px; width: 150px; background-color: green; border-color: green; position: absolute; left: 45%; top: 50m; margin:2px; align-content: center;">
+<button onclick="makeatriangle()">Make A Triangle</button>
+<button onclick="sayhelloworld();">What's up?</button>
+</div>
+<script type='text/javascript' src='http://lrn.icstars.org/redball1.js'></script>
+
+
+
+<button onclick="moveupagain()">Move Up Again</button>
+<button onclick="moverightagain()">Move Right Again</button>
+
+
+</body>
+
+</html> 
