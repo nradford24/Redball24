@@ -13,12 +13,12 @@ top: 100px;
 function moveright(){
   var elem = $("#redball");
   var pos = elem.offset();
-  pos.left = pos.left + 20;
+  pos.left = pos.left + 30;
   elem.css({ top: pos.top+'px', left: pos.left+'px' });
 }
 function grow(){
 	var elem = $("#mytitle");
-	elem.css("font-size","30px");
+	elem.css("font-size","42px");
 }
 
 function shrink(){
@@ -36,7 +36,7 @@ function fadein(){
 function moveleft(){
   var elem = $("#redball");
   var pos = elem.offset();
-  pos.left = pos.left - 20;
+  pos.left = pos.left - 30;
   elem.css({ top: pos.top+'px', left: pos.left+'px' });
 }
 
@@ -46,10 +46,10 @@ function moveleft(){
 <p id="mytitle">Motivate and Surmount</p>
 <img id='redball' src='http://www.icstars.org/files/redball.jpg'/>
 <button onclick="moveright();">move right</button>
+<button onclick="moveleft();">move left</button>
 <button onclick="grow();">grow</button>
+<button onclick="shrink();">shrink</button>
 <button onclick="fadeout();">fade out</button>
 <button onclick="fadein();">fade in</button>
-<button onclick="moveleft();">move left</button>
-<button onclick="shrink();">shrink</button>
 </body>
 </html>

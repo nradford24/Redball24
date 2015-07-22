@@ -1,6 +1,13 @@
 <html>
 
 <head>
+<style type="text/css">
+#buttonConsole {
+position:absolute;
+border:8px black;
+text-align:right-side;
+left:80%}
+</style>
 <script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
 <script type='text/javascript'>
 	function sayhelloworld(){ alert ('Nikki is working');
@@ -12,26 +19,38 @@
 <script>
 	function moveup()
 	{
-	redball.top=redball.top -30;
+	if(redball.top <10){
+	alert('Turn Up');
+	}
+	else
+	{
+	redball.top=redball.top -100;
             }
+			}
     </script>
+	
 	<script>
 	function moveleft()
 	{
-	redball.left=redball.left-30;
-	}
+	if (redball.left <10){
+	alert('Stay with me forever');}
+	else { redball.left=redball.left-100;
+	}}
 	</script>
 <script>
 function moveright() 
 {
-redball.left=redball.left +30;
-}
+if(redball.left>270){
+alert ('Can we get it togther');}
+else{redball.left=redball.left +100;
+}}
 </script>
 <script>
-function movedown()
-{ 
-redball.top=redball.top + 30;
-}
+function movedown(){
+if(redball.top>400){
+alert ('Ooh darling cause you will always be my baby');}
+else{ redball.top=redball.top + 100;
+}}
 </script>
 <script>
 function moveupright()
@@ -64,7 +83,16 @@ moveleft();
 function movetriangle()
 {
 moveupright();
-movedownleft();
+movedownright();
+moveleft();
+}
+</script>
+<script>
+function movesquare()
+{
+moveup();
+moveright();
+movedown();
 moveleft();
 }
 
@@ -74,6 +102,7 @@ moveleft();
 
 
 <img id='redball' src='http://media3.giphy.com/media/22YXh1AveKJtS/giphy.gif'/>
+<div id="buttonConsole">
 <button onclick="sayhelloworld();">Get IT Gurl</button>
 <button onclick="moveup()")> Move Up</button>
 <button onclick="moveleft()")> Move Left</button>
@@ -83,8 +112,8 @@ moveleft();
 <button onclick="moveupleft()")> Move Up Left</button>
 <button onclick="movedownright()")>Move  Down Right</button>
 <button onclick="movedownleft()")>Move Down Left</button>
+<button onclick="movetriangle()")>Move triangle</button>
 <button onclick="movesquare()")>Move Square</button>
-
-
+</div>
 </body>
 </html>
