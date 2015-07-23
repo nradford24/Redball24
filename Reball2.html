@@ -12,25 +12,25 @@
 <script>
 	function moveup()
 	{
-	redball.top=redball.top -100;
+	redball.top=redball.top -10;
             }
     </script>
 	<script>
 	function moveleft()
 	{
-	redball.left=redball.left-10;
+	redball.left=redball.left -10;
 	}
 	</script>
 <script>
 function moveright() 
 {
-redball.left=redball.left +100;
+redball.left=redball.left +10;
 }
 </script>
 <script>
 function movedown()
 { 
-redball.top=redball.top + 100;
+redball.top=redball.top + 10;
 }
 </script>
 <script>
@@ -83,11 +83,11 @@ moveupleft();
 <script>
 function movesquare()
 {
-moveup();
-moveright();
 movedown();
 moveleft();
 moveup();
+moveright();
+
 }
 </script>
 </head>
